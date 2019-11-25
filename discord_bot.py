@@ -23,7 +23,8 @@ async def on_message(person_message: Message):
 
     await lock.acquire()
     my_message = person_message.clean_content
-    await view.send(my_message)
+    if my_message != '':
+        await view.send(my_message)
     append_messages(client.message_list, [my_message])
 
     async with channel.typing():
