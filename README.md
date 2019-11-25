@@ -3,6 +3,9 @@ This is a third party implementation of the MMI-decoder for [DialoGTP](https://g
 
 It gives interesting responses, varying between funny, stupid and thoughtfull.
 
+This is how the bot describes itself:
+> Not sure how to describe it. But the person I was speaking to said it was like a little book of secrets.
+
 ### Features
 * Unlimitted chat length
 * Discord bot
