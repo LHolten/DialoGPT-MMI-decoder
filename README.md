@@ -1,9 +1,12 @@
 # DialoGTP-MMI-decoder
-This is a third party implementation of the MMI-decoder for DialoGTP.
+This is a third party implementation of the MMI-decoder for [DialoGTP](https://github.com/microsoft/DialoGPT).
+
+It gives interesting responses, varying between funny, stupid and thoughtfull.
 
 ### Features
 * Unlimitted chat length
 * Discord bot
+* Discord bot tested by a group of ~15 people
 
 ## Installation
 
