@@ -1,4 +1,9 @@
 # DialoGTP-MMI-decoder
+This is a third party implementation of the MMI-decoder for DialoGTP.
+
+### Features
+* Unlimitted chat length
+* Discord bot
 
 ## Installation
 
