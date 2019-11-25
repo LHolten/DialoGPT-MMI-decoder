@@ -48,7 +48,7 @@ def _get_response(output_token, past):
 
         out = torch.cat((out, output_token), dim=1)
 
-        if output_token == end_token:
+        if output_token.item() == end_token.item():
             break
 
     return out, past
