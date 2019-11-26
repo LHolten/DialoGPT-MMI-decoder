@@ -41,7 +41,7 @@ def _get_response(output_token, past):
 
     while True:
         output_token, past = model.forward(output_token, past=past)
-        output_token = output_token[:, -1, :]
+        output_token = output_token[:, -1, :].float()
         indices_to_remove = output_token < torch.topk(output_token, top_k)[0][..., -1, None]
         output_token[indices_to_remove] = -float('Inf')
         output_token = torch.multinomial(F.softmax(output_token, dim=-1), num_samples=1)
@@ -61,7 +61,7 @@ def _score_response(output_token, correct_token):
 
     loss, _, _ = reverse_model(inputs, labels=labels)
 
-    return -loss
+    return -loss.float()
 
 
 def append_messages(old_list: list, new_list: list, truncate_length=64):
