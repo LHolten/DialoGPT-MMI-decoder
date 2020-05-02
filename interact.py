@@ -56,7 +56,7 @@ def _get_response(output_token, past):
 
 def _score_response(output_token, correct_token):
     inputs = torch.cat((output_token, correct_token), dim=1)
-    mask = torch.full_like(output_token, -1, dtype=torch.long)
+    mask = torch.full_like(output_token, -100, dtype=torch.long)
     labels = torch.cat((mask, correct_token), dim=1)
 
     loss, _, _ = reverse_model(inputs, labels=labels)
