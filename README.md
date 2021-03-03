@@ -1,5 +1,5 @@
-# DialoGTP-MMI-decoder
-This is a third party implementation of the MMI-decoder for [DialoGTP](https://github.com/microsoft/DialoGPT).
+# DialoGPT-MMI-decoder
+This is a third party implementation of the MMI-decoder for [DialoGPT](https://github.com/microsoft/DialoGPT).
 
 It gives interesting responses, varying between funny, stupid and thoughtfull.
 
